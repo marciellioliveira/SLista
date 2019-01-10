@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RodapeComponent implements OnInit {
 
+	anoDesenvolvido = '@2019 - ';
+	desenvolvedora = 'Marcielli Oliveira';
+
   constructor() { }
 
   ngOnInit() {
