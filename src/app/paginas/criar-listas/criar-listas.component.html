@@ -80,18 +80,41 @@
 
     </div>
 
-    <div class="col-sm-4 align-self-center">
-
-      
+    <div class="col-sm-4 align-self-center">      
         
     </div>
 
     <div class="col-sm-4 align-self-center">  
 
-    <button type="button" class="btn btn-info btn-lg">
-        <img src="./assets/verlista.png"> Ver Lista</button>
-      
-    </div>        
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalLista"><img src="./assets/verlista.png"> Ver Lista</button>
+      <div class="modal fade" id="modalLista" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">          
+                <h4 class="modal-title">Minha Lista</h4>
+              </div>
+              <div class="modal-body">
+                Esses são todos os alimentos que você selecionou anteriormente. Agora só imprimir e levar no supermercado de sua preferência!
+                <br><br>
+                <ul class="list-group">
+                  <li class="list-group-item">Alimento 1</li>
+                  <li class="list-group-item">Alimento 2</li>
+                  <li class="list-group-item">Alimento 3</li>
+                  <li class="list-group-item">Alimento 4</li>
+                  <li class="list-group-item">Alimento 5</li>
+                </ul>
+                <br>
+                 <button type="button" class="btn">Imprimir</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>            
+          </div>
+        </div>
+    
     </div> <!-- /row -->
     
    
