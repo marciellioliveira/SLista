@@ -7,6 +7,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { ListasProntasComponent } from './paginas/listas-prontas/listas-prontas.component';
 import { CriarListasComponent } from './paginas/criar-listas/criar-listas.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CriarListasComponent } from './paginas/criar-listas/criar-listas.compon
     CriarListasComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

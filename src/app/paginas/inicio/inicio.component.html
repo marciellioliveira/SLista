@@ -1,19 +1,30 @@
-<div class="container-fluid">
+<!--<div class="container-fluid" id="inicio">
 
-	<p>{{ mensagemInicial }}</p>
+  <p>{{ mensagemInicial }}</p> 
 
-<div class="row">
-	<div class="col-sm-4 align-self-center">
-      <button type="button" class="btn">{{ botaoEsquerdo }}</button>
+
+
+  <div class="row">
+    <div class="col-sm-4 align-self-center">        
+        <button type="button" class="btn" (click)="abrirListasProntas()">{{ botaoEsquerdo }}</button>
+        
+      </div>
+
+      <div class="col-sm-4 align-self-center" id="logo">
+        <img src="./assets/logo.png" class="rounded" alt="Logo SLista">
+      </div>
+
+      <div class="col-sm-4 align-self-center">  
+         <button type="button" class="btn" (click)="abrirCriaristas()">{{ botaoDireito }}</button>
+      </div>
     </div>
+  </div>
 
-    <div class="col-sm-4 align-self-center" id="logo">
-      <img src="./assets/logo.png" class="rounded" alt="Logo SLista">
-    </div>
+  <div id="listasProntas">
+    <app-listas-prontas></app-listas-prontas>    
+  </div>
 
-    <div class="col-sm-4 align-self-center">
-      <button type="button" class="btn">{{ botaoDireito }}</button>
-    </div>
-</div>
-   
-</div>
+  <div id="criarListas">
+    <app-criar-listas></app-criar-listas> 
+  </div>-->
+
