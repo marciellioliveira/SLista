@@ -78,10 +78,35 @@ export class GraficoComponent implements OnInit {
   		data: {
   			datasets:[{
   				data:[45,10,5,25,15],
-  				backgroundColor:["red","orange","yellow","green","blue"],
+  				backgroundColor:["#4d4dff","#d24dff","#ff4da6","#4dff4d","#ff944d"],
   				label:'Dataset 1'
   			}],
   			labels:['Até 20 anos',"De 20 a 30","De 30 a 40","De 40 a 50","50 para cima"]
+  		}
+  	})
+
+  	//PieChart
+  	new Chart('pie', {
+  		type:'pie',
+  		options: {
+  			responsive: true,
+  			title: {
+  				display: true,
+  				text: 'Visitantes do site - Primeiro Semestre /2019'
+  			}, legend: {
+  				position: 'top',
+  			}, animation: {
+  				animationScale: true,
+  				animateRotate: true
+  			}
+  		},
+  		data: {
+  			datasets: [{
+  				data:[45,10,5,25,15,100].reverse(),
+  				backgroundColor: ['#4dffc3','#ff4da6','#ffff4d','#4d4dff','#4da6ff','#ff4d4d'],
+  				label:''
+  			}],
+  			labels:['Jan','Fev','Mar','Abr','Mai','Jun']
   		}
   	})
 
