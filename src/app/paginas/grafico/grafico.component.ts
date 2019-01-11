@@ -110,6 +110,7 @@ export class GraficoComponent implements OnInit {
   		}
   	})
 
+    
   	//LineChart
   	this.LineChart = new Chart('lineChart', {
   		type:'line',
