@@ -32,15 +32,25 @@ export class GraficoComponent implements OnInit {
   			labels:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],
   			datasets:[{
   				type:'bar',
-  				label:'Feminino',
+  				label:'Carne',
   				data:[443,256,165,10,156,265,356,543,443,256,165,10],  				
   				backgroundColor:'rgba(255,0,255,0.4)',
   				borderColor:"rgba(255,0,255,0.4)",
   				fill:false,  				
   			},
   			{
+  				type:"line",
+  				label: "Verdura/Legume",
+  				backgroundColor: 'rgba(0,0,255,0.4)',
+  				borderColor:'rgba(0,0,255,0.4)',
+  				data: [
+  					10,30,50,10,56,65,35,543,543,543
+  				],
+  				fill:true,
+  			},
+  			{
   				type:'bar',
-  				label:'Masculino',
+  				label:'Fruta',
   				data:[443,256,165,10,156,265,356,543,443,256,165,10].reverse(),  				
   				backgroundColor:'rgba(0,0,255,0.4)',
   				borderColor:"rgba(0,0,255,0.4)",
@@ -49,6 +59,31 @@ export class GraficoComponent implements OnInit {
   			]
   		}
   	});
+
+  	//Doughnut
+  	new Chart('doughnut',{
+  		type:'doughnut',
+  		options: {
+  			responsive:true,
+  			title: {
+  				display:true,
+  				text:'Idade / Usuários'
+  			},legend: {
+  				position:'top',
+  			}, animation: {
+  				animateScale:true,
+  				animateRotate:true
+  			}
+  		},
+  		data: {
+  			datasets:[{
+  				data:[45,10,5,25,15],
+  				backgroundColor:["red","orange","yellow","green","blue"],
+  				label:'Dataset 1'
+  			}],
+  			labels:['Até 20 anos',"De 20 a 30","De 30 a 40","De 40 a 50","50 para cima"]
+  		}
+  	})
 
   	//LineChart
   	this.LineChart = new Chart('lineChart', {
